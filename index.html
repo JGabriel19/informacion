@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil Profesional - Alex Morgan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Encabezado / Navegación -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">AM</div>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Cambiar tema">🌙</button>
+    </nav>
+  </header>
+
+  <!-- Sección Principal / Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hola, soy <span class="highlight">Alex Morgan</span></h1>
+      <p class="subtitle">Desarrollador Full Stack & Diseñador UI/UX</p>
+      <p class="description">Apasionado por crear experiencias digitales fluidas, innovadoras y accesibles.</p>
+      <a href="#contact" class="btn">Contáctame</a>
+    </div>
+  </section>
+
+  <main>
+    <!-- Sobre Mí -->
+    <section id="about" class="section">
+      <h2>Sobre mí</h2>
+      <div class="about-card">
+        <p>Con más de 5 años de experiencia en la industria tecnológica, me especializo en desarrollar soluciones eficientes utilizando tecnologías modernas. Me me apasiona resolver problemas complejos mediante un código limpio y arquitecturas escalables.</p>
+        <ul class="personal-info">
+          <li><strong>Ubicación:</strong> Ciudad Tecnológica, País</li>
+          <li><strong>Email:</strong> alex.morgan.dev@example.com</li>
+          <li><strong>Idiomas:</strong> Español (Nativo), Inglés (Avanzado)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills" class="section">
+      <h2>Habilidades</h2>
+      <div class="skills-grid">
+        <div class="skill-card">JavaScript / TypeScript</div>
+        <div class="skill-card">React & Node.js</div>
+        <div class="skill-card">HTML5 & CSS3</div>
+        <div class="skill-card">Bases de Datos (SQL & NoSQL)</div>
+        <div class="skill-card">Diseño UI/UX (Figma)</div>
+        <div class="skill-card">Git & DevOps Básico</div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="projects" class="section">
+      <h2>Proyectos Destacados</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Sistema de Gestión Inteligente</h3>
+          <p>Plataforma web para optimizar flujos de trabajo en equipos remotos con análisis en tiempo real.</p>
+          <span class="tag">React</span> <span class="tag">Node.js</span>
+        </article>
+        <article class="project-card">
+          <h3>Aplicación de Análisis Financiero</h3>
+          <p>Dashboard interactivo con herramientas de visualización de datos de alto rendimiento.</p>
+          <span class="tag">TypeScript</span> <span class="tag">D3.js</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="section">
+      <h2>Contacto</h2>
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" required placeholder="Tu nombre">
+        </div>
+        <div class="form-group">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" required placeholder="tu@email.com">
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea id="message" rows="4" required placeholder="Escribe tu mensaje..."></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar Mensaje</button>
+      </form>
+      <p id="form-response" class="hidden-response"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Alex Morgan. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
